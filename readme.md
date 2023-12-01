@@ -4,9 +4,9 @@ A quick demo on how to implement SSO using OAuth in golang application.
 Single sign-on (SSO) is a session and user authentication service that permits a user to use one set of login credentials -- for example, a username and password -- to access multiple applications.
 ## Procedure
 
-We will be using Google cloud for this project. 
+We will be using Google cloud for this project. Just login to your Google account. The Google Cloud for our usage is completely free. 
 The very first thing is to register our application to Google Console Dashboard. You can follow one of the online tutorials on how to do so. 
-The following are the quick steps to take register an app:
+The following are the quick steps to register an app:
 1. Go to Google Cloud Platform (https://console.cloud.google.com/apis/dashboard)
 2. From left option, Go to "**APIs & Services**"
 3. Create "New Project" by selecting from the dropdown on top of screen. Then give the project name. And click **create**.
@@ -25,8 +25,6 @@ Under the root of your project, you will create _.env_ file, and have the follow
 <br>CLIENT_SECRET=
 <br>REDIRECT_URL=
 
-This client_ID and client secret
-
 Setup is complete. Just fire up the main file.
 
 Go to localhost:3000 (I usually recommend to use an Incognito tab)
@@ -35,7 +33,7 @@ Click "**Login with Google**"
 
 If it takes you to Google login screen and ask to enter google credentials to access the project you created in step 2 above, you are in right path. Importantly, you should notice the clientID and client Secret you had inside that JSON.
 
-Now use the Google account you added as Test user. I had my own email address. Hence here is my output:
+Now use the Google account you added as Test user. I had my own email address. Hence, here is my output:
 
 <pre><code>
 Redirected URL:
